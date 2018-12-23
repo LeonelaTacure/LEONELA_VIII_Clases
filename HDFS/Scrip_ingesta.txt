@@ -1,0 +1,23 @@
+hdfs dfs -ls /
+hdfs dfs -mkdir /Datalake/
+hdfs dfs -mkdir /Datalake/Landing
+hdfs dfs -mkdir /Datalake/Transformation/
+hdfs dfs -mkdir /Datalake/Reports/
+hdfs dfs -ls /Datalake/
+hdfs dfs -mkdir /Datalake/Landing/Migracion
+hdfs dfs -mkdir /Datalake/Landing/Migracion/Postpago_Prepago
+hdfs dfs -mkdir /Datalake/Landing/Migracion/Postpago_Prepago/Datos_Migración
+hdfs dfs -mkdir /Datalake/Landing/Migracion/Postpago_Prepago/Llamadas
+hdfs dfs -mkdir /Datalake/Landing/Migracion/Postpago_Prepago/Llamadas/Json
+hdfs dfs -mkdir /Datalake/Landing/Migracion/Postpago_Prepago/Llamadas/CSV
+hdfs dfs -mkdir /Datalake/Landing/Migracion/Postpago_Prepago/Ubigeo
+hdfs dfs -mkdir /Datalake/Landing/Migracion/Postpago_Prepago/Pagos
+hdfs dfs -mkdir /Datalake/Landing/Migracion/Postpago_Prepago/Consumo_MB
+hdfs dfs -mkdir /Datalake/Landing/Migracion/Postpago_Prepago/Revision
+hdfs dfs -put Migraciones_1.txt /Datalake/Landing/Migracion/Postpago_Prepago/Datos_Migración
+hdfs dfs -put data_semi.json /Datalake/Landing/Migracion/Postpago_Prepago/Llamadas/Json
+hdfs dfs -put voz_diario_1.csv /Datalake/Landing/Migracion/Postpago_Prepago/Llamadas/CSV
+hdfs dfs -put Ubigeo.txt /Datalake/Landing/Migracion/Postpago_Prepago/Ubigeo
+hdfs dfs -put Pago_diario.txt /Datalake/Landing/Migracion/Postpago_Prepago/Pagos
+hdfs dfs -put datos.csv /Datalake/Landing/Migracion/Postpago_Prepago/Consumo_MB
+hdfs dfs -put reversion_diario.txt /Datalake/Landing/Migracion/Postpago_Prepago/Revision

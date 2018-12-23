@@ -1,0 +1,19 @@
+
+create 'propuestas_cliente' , 'cliente', 'propuesta'
+list
+put 'propuestas_cliente' , '46789054' , 'cliente:Nombre', 'Roberto'
+put 'propuestas_cliente' , '46789054' , 'cliente:Lineas', '2'
+put 'propuestas_cliente' , '46789054' , 'cliente:numero', '945945976'
+put 'propuestas_cliente' , '46789054' , 'propuesta:plan', '4215'
+put 'propuestas_cliente' , '46789054' , 'propuesta:plan_nuevo','4415' 
+put 'propuestas_cliente' , '46789054' , 'propuesta:tipo', 'prepago'
+
+put 'propuestas_cliente' , '70947108' , 'cliente:Nombre', 'deby'
+put 'propuestas_cliente' , '70947108' , 'cliente:Lineas', '1'
+put 'propuestas_cliente' , '70947108' , 'cliente:numero', '944284785'
+put 'propuestas_cliente' , '70947108' , 'propuesta:plan', 4326
+put 'propuestas_cliente' , '70947108' , 'propuesta:plan_nuevo', 4125
+put 'propuestas_cliente' , '70947108' , 'propuesta:plan_nuevo', 'postpago'
+
+
+
